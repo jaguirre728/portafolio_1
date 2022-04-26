@@ -34,3 +34,16 @@ document.querySelectorAll(".hamburguer")[0].addEventListener("click",function(){
     }
     enlacesHeader.classList.toggle("menudos")
 });
+
+let check = document.querySelector(".check");
+check.addEventListener("click",idioma);
+
+function idioma(){
+    let id =check.checked;
+    if(id == true){
+        location.href="en/index.html";
+    }
+    else{
+        location.href="../index.html";
+    }
+}
